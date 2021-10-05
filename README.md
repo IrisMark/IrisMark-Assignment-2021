@@ -11,4 +11,4 @@ I made this assignment as a cv/portfolio. In green my comments. You can leave yo
 
 ----------------
 
-Let me know if you are not able to ope the assignment file.
+Let me know if you are not able to open the assignment file.
