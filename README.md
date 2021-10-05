@@ -8,3 +8,7 @@ So this is the assignment. Much is not clear to me... The course is online witho
 Also I still don't get forms. Where is the form going to? How as an administrator do I get the info from the user input?
 
 I made this assignment as a cv/portfolio. In green my comments. You can leave your comments in red if you would like. Thanks, Iris
+
+----------------
+
+Let me know if you are not able to ope the assignment file.
