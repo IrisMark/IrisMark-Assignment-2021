@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="IM-64.png">
+    <title>Iris Mark &ndash; Skills</title>
+    <meta name="description" content="Final project for the Developing Modern Web Platforms course.">
+    <meta name="keywords" content="meta tags, learning, developing, modern web platforms, HTML5, CSS, JS, Bootstrap, responsive, web applications, graphic designer, AMKooderi">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Styles\styles.css" media="screen" />
+
+</head>
+<body>
+
+    <main>
+        <div class="row">
+
+            <!--start of side column (left)-->
+            <div class="column side">
+                <div class="imageSide">
+                    <img src="Images\IrisMark_2021.jpg"
+                         alt="Portrait of Iris Mark - made by Amanda Soila"
+                         title="Always happy in Finlands Finest Forrest"
+                         style="border-radius:50%">
+                </div>
+
+                <header>
+                    <h2> Iris Mark</h2>
+                    <h3> Visual Designer &amp; <br /> Web Developer</h3>
+                </header>
+
+                <nav>
+                    <a href="_index.html">Introduction</a>
+                    <a class="active" href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="feedback.html">Feedback</a>
+                </nav>
+
+                <div class="inSide">
+                    <p> </p>
+                </div>
+            </div>
+
+            <!--start of main column (right)-->
+            <div class="column main">
+
+                <!--start of skills -->
+                <div class="block">
+                    <figure>
+                        <div>
+                            <a target="_blank" href="Documents/IrisMark_CV-2021.pdf" download>
+                                <input type="button" class="button download top1" value="Download CV (PDF)">
+                            </a>
+                        <a target="_blank" href="Documents/IrisMark_CV-2021.docx" download>
+                            <input type="button" class="button download top2" value="Download CV (DOCX)">
+                        </a>
+                            <img src="Images\skills.jpg" alt="Illustrative skill picture">
+                       </div>
+                    </figure>
+                </div>
+
+
+                <div class="row">
+                    <div class="column split1">
+                        <div class="block">
+                            <div>
+                                <h5>Core competence</h5>
+                                <ul>
+                                    <li>Neo system key user</li>
+                                    <li>Layouts </li>
+                                    <li>Banners</li>
+                                    <li>Localization versions</li>
+                                    <li>CMS platforms</li>
+                                </ul>
+                            </div>
+
+
+                            <div>
+                                <h5>Computer skills</h5>
+                                <ul>
+                                    <li>Adobe Acrobat Pro DC</li>
+                                    <li>Adobe Illustrator</li>
+                                    <li>Adobe InDesign</li>
+                                    <li>Adobe Photoshop</li>
+                                    <li>Anygraaf Neo & Planner</li>
+                                    <li>C#</li>
+                                    <li>HTML  &amp; CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>WordPress</li>
+                                </ul>
+                            </div>
+                       </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="column split2">
+                            <div class="block">
+                                <div>
+                                    <h5>Language skills</h5>
+                                    <ul>
+                                        <li>English<i> Full professional proficiency</i></li>
+                                        <li>Finnish<i> Professional working proficiency</i></li>
+                                        <li>Dutch<i> Native proficiency</i></li>
+                                    </ul>
+                                </div>
+
+                            <div>
+                                <h5>Soft skills</h5>
+                                <!--origial input  <ul><li>Creative thinking</li><li>Teamwork</li><li>Time management</li><li>Positive attitude</li></ul>-->
+                                <ul>
+                                    <li>Creative thinking</li>
+                                    <li>Teamwork</li>
+                                    <li>Time management</li>
+                                    <li>Positive attitude</li>
+                                </ul>
+                            </div>
+
+<!--Add skill to the first of the list and remove last one-->
+                            <div>
+                                <label for="skill">Soft skill</label><br />
+                                <input type="text" id="skillSoft" name="skillSoft" placeholder="Add skill on top...">
+                                <a target="_blank" href="Documents/IrisMark_CV-2021.pdf" download>
+                                    <input type="button" class="button submit" value="Add skill">
+                                </a>
+                            </div>
+                        
+                         </div>                           
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>&copy Iris Mark 2021</p>
+    </footer>
+
+    <script src="JS\external.js"></script>
+
+</body>
+</html>
