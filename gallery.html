@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="Face-64.png" >
+    <title>Iris Mark &ndash; Gallery</title>
+    <meta name="description" content="Final project for the Developing Modern Web Platforms course.">
+    <meta name="keywords" content="meta tags, learning, developing, modern web platforms, HTML5, CSS, JS, Bootstrap, responsive, web applications, graphic designer, AMKooderi">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Styles\styles.css" media="screen" />
+    <link rel="stylesheet" href="Styles\slides.css" media="screen" />
+</head>
+
+<body>
+
+    <main>
+        <div class="row">
+
+            <!--start of side column (left)-->
+            <div class="column side">
+                <div class="imageSide">
+                    <img src="Images\IrisMark_2021.jpg"
+                         alt="Portrait of Iris Mark - made by Amanda Soila"
+                         title="Always happy in Finlands Finest Forrest"
+                         style="border-radius:50%">
+                </div>
+
+                <div>
+                    <h2> Iris Mark</h2>
+                    <h3> Visual Designer &amp; <br /> Web Developer</h3>
+                </div>
+
+                <nav>
+                    <a href="_index.html">Introduction</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a class="active" href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="feedback.html">Feedback</a>
+                </nav>
+
+                <div class="inSide">
+                    <p> </p>
+                </div>
+            </div>
+
+            <!--start of main column (right)-->
+            <div class="column main">
+
+                <!--start of slideshow -->
+                <div class="block">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 5</div>
+                            <div class="polaroid">
+                                <img src="Images\Gallery\2017_Repovesi_bridge.jpg" style="width:100%">
+                                <div class="text">2017 Repovesi</div>
+                                <div class="container">
+                                    <p>My first and toughest hike, but also the one with the best rewards. Stunning views troughout the park. And finally crossing the 55 meter long and 12 meter high hanging bridge. This bridge collapsed the following year.</p>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 5</div>
+                                <div class="polaroid">
+                                    <img src="Images\Gallery\2018_Liesjarvi_lunch.jpg" style="width:100%">
+                                    <div class="text">2018 Liesjärvi</div>
+                                    <div class="container">
+                                        <p>On the first day we rented some fatebikes and found plenty of cantharellus. The second day we had loads of rain but we anway had a blast. The joy of good rain gear!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">3 / 5</div>
+                                <div class="polaroid">
+                                    <img src="Images\Gallery\2019_Teijo_fog.jpg" style="width:100%">
+                                    <div class="text">2019 Teijo</div>
+                                    <div class="container">
+                                        <p>We did many smaller routes. There are many beautiful lakes and a nice climb to the top to see it all from above. Stunning sunset and misty morning.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">4 / 5</div>
+                                <div class="polaroid">
+                                    <img src="Images\Gallery\2020_Isojarvi_Atlantis.jpg" style="width:100%">
+                                    <div class="text">2020 Isojärvi </div>
+                                    <div class="container">
+                                        <p>Loads of rain had fallen prior our trip and beavers are the main inhabitants here. Several parts were flooded because of that, luckily there was a second campfire place. It was a good mushroom year.</p>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="mySlides fade">
+                                    <div class="numbertext">5 / 5</div>
+                                <div class="polaroid">
+                                    <img src="Images\Gallery\2021_Lapakisto_rockyroad.jpg" style="width:100%">
+                                    <div class="text">2021 Lapakisto</div>
+                                    <div class="container">
+                                        <p>This is a small park with a lot of variety, there was even a tiny watterfal. It was a very windy and chilly weekend, but with good clothes and sleeping bags we survived easily. I even took a morning swim in.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                            </div>
+
+                            <!--start of dots -->
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+    </main>
+    <footer>
+        <p>&copy Iris Mark 2021</p>
+    </footer>
+
+    <script src="JS\external.js"></script>
+    <script src="JS\slides.js"></script>
+</body>
+</html>

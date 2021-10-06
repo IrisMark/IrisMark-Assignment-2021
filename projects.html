@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="IM-64.png">
+    <title>Iris Mark &ndash; Projects</title>
+    <meta name="description" content="Final project for the Developing Modern Web Platforms course.">
+    <meta name="keywords" content="meta tags, learning, developing, modern web platforms, HTML5, CSS, JS, Bootstrap, responsive, web applications, graphic designer, AMKooderi">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Styles\styles.css" media="screen" />
+    <style>
+        .test {
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body onload="loadFunction()">
+    <main>
+        <div class="row">
+
+            <!--start of side column (left)-->
+            <div class="column side">
+                <div class="imageSide">
+                    <img src="Images\IrisMark_2021.jpg"
+                         alt="Portrait of Iris Mark - made by Amanda Soila"
+                         title="Always happy in Finlands Finest Forrest"
+                         style="border-radius:50%">
+                </div>
+
+                <div>
+                    <h2> Iris Mark</h2>
+                    <h3> Visual Designer &amp; <br /> Web Developer</h3>
+                </div>
+
+                <nav>
+                    <a href="_index.html">Introduction</a>
+                    <a href="skills.html">Skills</a>
+                    <a class="active" href="projects.html">Projects</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="feedback.html">Feedback</a>
+                </nav>
+
+                <div class="inSide">
+                    <p> </p>
+                </div>
+            </div>
+
+            <!--start of main column (right)-->
+            <div class="column main">
+                <!--start of print projects-->
+                <div id="printProjects" class="block">
+                    <!--opening pic + download buttons (print)-->
+                    <figure>
+                        <div>
+                            <a target="_blank" href="Documents/IrisMark_Portfolio-2021.pdf" download>
+                                <input type="button" class="button download top1" value="Download print projects">
+                            </a>
+                            <img src="Images\Projects\PortfolioPrint.jpg" alt="Print portfolio examples">
+                        </div>
+                    </figure>
+                    <br />
+
+                    <!--Projects print-->
+                    <section>
+                        <h3> Project 1: Fit Treeni </h3>
+                        <div class="polaroid">
+                            <img src="Special1.jpg" alt="Fit Treeni 2018 cover"
+                                 onMouseOver="MouseRollover(this)"
+                                 onMouseOut="MouseOut(this)" />
+                            <div class="container">
+                                Managing the proces of these special editions from start to finish. Visual concept, which had to be different than the regular magazine, but still recognizable as 'Fit'. Responsible for photo shoots, layouts and delivery to the printing house.
+                            </div>
+                        </div>
+                    </section>
+                    <br />
+
+                    <section>
+                        <h3> Project 2: Localization versions </h3>
+                        <div class="polaroid">
+                            <img src="Images\Projects\Localization.jpg">
+                            <br />
+                            <div class="container">
+                                Overseeing the consistency of translated elements and take in account the local customs. Making layouts as close as possible to the master, which is a challenge with languages which translate up to 15% longer.
+                            </div>
+                        </div>
+                    </section>
+                    <br />
+
+                    <section>
+                        <h3> Project 3: Template building </h3>
+                        <div class="polaroid">
+                            <img src="Images\Projects\Template.jpg" alt="Screenshot of layout in InDesign">
+                            <div class="container">
+                                Defining the structure, build and test templates for different magazines. Producing manuals and teaching end users how to use the system efficiently. Also giving technical support and making design changes when necessary.
+                            </div>
+                        </div>
+                    </section>
+                    <br />
+                    <button class="button submit" onclick="goPrintFunction()">To top of print projects</button>
+
+                </div>
+                <!--start of digital projects-->
+                <div id="digitalProjects" class="block">
+                    <!--opening pic + download buttons (digital)-->
+                    <figure>
+                        <div>
+                            <a target="_blank" href="Documents/IrisMark_PortfolioDigital.pdf" download>
+                                <input type="button" class="button download top1" value="Download digital projects">
+                            </a>
+                            <img src="Images\Projects\PortfolioDigital.jpg" alt="Digital portfolio examples">
+                        </div>
+                    </figure><br />
+                    <!--Projects digital-->
+                    <section>
+                        <h3> Project 4: Website </h3>
+                        <div class="polaroid">
+                            <img src="Images\Projects\TVF.jpg" alt="Screenshot of Tanssin Voima Festivaali home page">
+                            <div class="container">
+                                Defining the structure and looks, build and test the usuabillity. Power of Dance festival is biennial and is lead by a non profit organization with a limited budget
+                            </div>
+                        </div>
+                    </section>
+                    <br />
+
+                    <section>
+                        <h3> Project 5: Banners </h3>
+                        <div class="polaroid">
+                            <img src="Images\Projects\Banner.jpg" alt="Screenshot of Cosmopolitan banner">
+                            <div class="container">
+                                Producing series of banners for different magazines in all kinds of shapes and sizes. Some of them done ad hoc, others with a longer time span. The biggest challange was to us the same elements in totally different shapes.
+                            </div>
+                        </div>
+                    </section>
+
+                    <br />
+                    <button class="button submit" onclick="goDigitalFunction()">To top of digital projects</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy Iris Mark 2021</p>
+    </footer>
+
+    <script src="JS\external.js"></script>
+    <script>
+window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        confirm("You have reached the end");    
+
+}};
+</script>
+
+</body>
+</html>
