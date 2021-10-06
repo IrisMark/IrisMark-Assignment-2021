@@ -1,0 +1,414 @@
+* {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    height: 1px;
+    background-color: rgba(0,153,153);
+    border: none;
+}
+
+
+h2 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-variant-caps: all-petite-caps;
+    line-height: 0.01;
+}
+
+h3 {
+    font-size: 20px;
+    font-variant-caps: all-petite-caps;
+    line-height: 0.85;
+}
+
+h4 {
+    font-size: 20px;
+    font-variant-caps: all-petite-caps;
+    margin: 5px 0px;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    font-variant-caps: all-petite-caps;
+    background-color:rgba(0,153,153,0.5);
+    color:white;
+    padding: 5px 15px;
+    width:auto;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.quote {
+    font-size: 17px;
+    line-height: 1.5;
+    font-style: italic;
+    color: rgba(0,153,153);
+    text-align: center;
+}
+
+.quotee {
+    font-size: 14px;
+    line-height: 1.5;
+    font-style: italic;
+    text-align: center;
+}
+
+ul {
+    list-style-type: square;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0px 0px 20px 16px;
+}
+
+.period {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-variant-caps: all-petite-caps;
+    color: rgba(0,153,153);
+    padding: 0px 15px;
+    margin: none;
+    width:auto;
+}
+
+/*navigation*/
+nav {
+    overflow: hidden;
+    width: 100%;
+}
+
+    nav a, nav a:visited {
+        display: block;
+        /* If want color backgroud: background-color: rgba(255,255,255, 0.3);*/
+        font-variant-caps: all-petite-caps;
+        color: white;
+        text-align: center;
+        /* IF LEFT INDENT THEN USE THIS: text-indent: 30px;*/
+        padding: 14px 0px;
+        text-decoration: none;
+    }
+
+   nav a:hover {
+            background-color: white;
+            color: rgba(255,140,0);
+        }
+
+    nav a.active {
+        display: block;
+        background-color: rgba(255,140,0);
+        font-variant-caps: all-petite-caps;
+        color: white;
+        text-align: center;
+        /* IF LEFT INDENT THEN USE THIS: text-indent: 30px;*/
+        padding: 14px 0px;
+        text-decoration: none;
+    }
+
+
+/*links*/
+a {
+    color: rgba(0,153,153);
+    text-decoration: none;
+}
+
+    a:hover {
+        color: rgba(255,140,0);
+        text-decoration: none;
+    }
+
+    a:active {
+        color: rgba(255,140,0);
+        text-decoration: underline;
+    }
+
+    a:visited {
+        color: rgba(169,169,169);
+        text-decoration: none;
+    }
+
+.icon {
+font-size:35px
+}
+
+
+body {
+background-image: url(../Images/backgroundLoop.png);
+background-repeat: repeat;
+background-color: rgba(204,234,234,0.3);
+}
+
+
+/*main field*/
+main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 1080px
+}
+
+/*split main field in 2 columns*/
+.column {
+    float: left;
+}
+
+    .column.side {
+        width: 26%;
+        margin: 0vh 2vh 0vh 0vh;
+        background-color: rgba(0,153,153);
+        text-align: center;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0, 0, 0,0.12);
+    }
+
+    .column.main {
+        width: 72%;
+    }
+
+/* More splits */
+
+    .column.split {
+        width: 49.9999%;
+        float: left;
+    }
+
+    .column.split1 {
+        width: 49.9999%;
+	padding: 0 12px 0 0;
+        float: left;
+    }
+
+    .column.split2 {
+        width: 49.9999%;
+	padding: 0 0 0 12px;
+        float: left;
+    }
+
+    .column.third {
+        padding: 0px 6px 12px;
+        float: left;
+        width: 33%;
+        }
+
+    .column.thirdText {
+        padding: 0px 14px 12px;
+        float: left;
+        width: 33%;
+        }
+
+    .column.small {
+	padding: 0 6px 12px;
+        float: left;
+        width: 56px;
+        }
+
+/* padding for column side */
+.inSide {
+    padding: 0 30px 20px 30px;
+}
+
+.imageSide {
+    padding: 20px 20px;
+}
+
+/* other column elements */
+/* shadow block */
+.block {
+  background: rgba(204,234,234);
+    padding: 30px 30px;
+    margin: 0vh 0vh 2vh 0vh;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0, 0, 0,0.12);
+    width: 100%;
+}
+
+.polaroid {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+  text-align: left;
+  padding: 10px 20px;
+}
+
+figure {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/*form elements*/
+
+fieldset {
+    width: 100%;
+    border: 2px solid rgba(0,153,153);
+    border-radius: 4px;
+    background-color: rgba(0,153,153,0.1);
+}
+
+legend {
+    text-align: center;
+    background-color: rgba(0,153,153);
+    color: #fff;
+    padding: 5px 15px;
+    font-weight: bold;
+    width: auto;
+}
+
+.half {
+        width: 49.99%;
+        float: left;
+        padding:0px 8px;
+    }
+
+    .row-padding {
+        width: 100%;
+        float: left;
+        padding:0px 8px 0 8px;
+    }
+
+    .whole {
+        width: 99.99999%;
+        float: left;
+        padding: 0px 8px;
+    }
+
+label {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-variant-caps: all-petite-caps;
+    line-height: 0.01;
+    cursor: pointer;
+}
+
+input, select, textarea {
+    color: rgba(0,153,153);
+    padding: 5px 5px;
+    margin: 2px 0 15px 0;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    outline-color: rgba(255,140,0);
+    resize: none;
+}
+
+textarea {    
+margin: 2px 0 0 0;
+}
+
+select[name=gender] {
+    padding: 4.2px 5px;
+}
+
+placeholder {
+    font-size: 12px;
+    color: rgba(169,169,169);
+    padding: 5px 2px;
+}
+
+#showChar{
+    font-size: 12px;
+    color: rgba(169,169,169);
+margin: 2px 0 15px 0;
+}
+
+/*buttons*/
+.button {
+    color: black;
+    text-align: center;
+    width: auto;
+    margin: 5px 2px 15px 2px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0, 0, 0,0.12); 
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+    .button:hover {
+        color: white;
+    }
+
+    .button.empty {
+        background-color: lightgrey;
+        border: 2px solid rgba(255,140,0);
+    }
+
+    .button.download {
+        background-color: lightgrey;
+        border: 1px solid rgba(0,0,0);
+    }
+
+    .button.submit, .button.top{
+        background-color: lightgrey;
+        border: 2px solid rgba(0,153,153);
+    }
+
+    .button.empty:hover{
+        background-color: rgba(255,140,0);
+    }
+
+    .button.submit:hover, .button.top:hover  {
+        background-color: rgba(0,153,153);
+    }
+
+    .button.download:hover {
+        background-color: rgba(0,0,0);
+    }
+
+.button.top1 {
+  position: absolute;
+  text-align: left;
+  margin: 12px;
+}
+
+.button.top2 {
+  position: absolute;
+  text-align: left;
+  margin: 12px 160px;
+}
+
+
+/* footer */
+footer {
+    color: white;
+    background-color: rgba(255,140,0);
+    padding: 3px;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    /* Responsive layout - makes the columns stack */
+    @media (max-width: 600px) {
+        .column.side, .column.main, .half, .column.split, .column.split1,.column.split2,.column.third, .column.thirdText, .row-padding {
+            width: 100%;
+        }
+    }
+
+/*text colors*/
+.teal {
+color:rgba(0,153,153);
+}
+.orange {
+color:rgba(255,140,0);
+}
+.darkgrey{
+color:rgba(169,169,169);
+}
