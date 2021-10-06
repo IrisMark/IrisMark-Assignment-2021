@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="Face-64.png">
+    <title>Iris Mark &ndash; Contact</title>
+    <meta name="description" content="Final project for the Developing Modern Web Platforms course.">
+    <meta name="keywords" content="meta tags, learning, developing, modern web platforms, HTML5, CSS, JS, Bootstrap, responsive, web applications, graphic designer, AMKooderi">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Styles\styles.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="row">
+            <!--start of side column (left)-->
+            <div class="column side">
+                <div class="imageSide">
+                    <img src="Images\IrisMark_2021.jpg"
+                         alt="Portrait of Iris Mark - made by Amanda Soila"
+                         title="Always happy in Finlands Finest Forrest"
+                         style="border-radius:50%">
+                </div>
+
+                <header>
+                    <h2> Iris Mark</h2>
+                    <h3> Visual Designer &amp; <br /> Web Developer</h3>
+                </header>
+
+                <nav>
+                    <a href="_index.html">Introduction</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a class="active" href="contact.html">Contact</a>
+                    <a href="feedback.html">Feedback</a>
+                </nav>
+
+                <div class="inSide">
+                    <p> </p>
+                </div>
+            </div>
+
+            <!--start of main column (right)-->
+            <div class="column main">
+                <div class="block">
+                    <div class="row">
+                        <!--form starts here-->
+                        <form action="/cgi-bin/test.cgi" name="contactForm" onsubmit="return(validate());">
+                            <fieldset>
+                                <br /><legend> Contact request</legend>
+                                <!--First name text box: Validation: no blank-less than 25 character-->
+                                <div class="half">
+                                    <label for="firstName">First name</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Your first name...">
+                                </div>
+                                <!--Last name text box: Validation: no blank-less than 25 character-->
+                                <div class="half">
+                                    <label for="lastName">Last name</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Your last name..."><br />
+                                </div>
+                                <!--Age text box: Validation: no blank-older than 18-below than 100-->
+                                <div class="half">
+                                    <label for="age">Age</label><br />
+                                    <input type="text" id="age" name="age" placeholder="Your age...">
+                                </div>
+                                <!--Gender dropdwon box: Validation: no blank-->
+                                <div class="half">
+                                    <label for="gender">Gender</label>
+                                    <select name="gender" id="gender">
+                                        <option value="-1" selected> </option>
+                                        <option value="1">Female</option>
+                                        <option value="2">Male</option>
+                                        <option value="3">Non-binary</option>
+                                    </select>
+                                </div>
+                                <!--Email text box (WHY NOT EMAIL??): Validation: no blank-proper email less than 50 characters-->
+                                <div class="half">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Your email address...">
+                                </div>
+                                <!--Website text box (WHY NOT URL??): Validation: no blank-proper url less than 50 characters-->
+                                <div class="half">
+                                    <label for="www">Website</label><br />
+                                    <input type="url" id="www" name="www" placeholder="Your url address...">
+                                </div>
+                                <!--Comment text box (WHY NOT textarea??): Validation: no blank-proper url  (????) less than 255 characters-->
+                                <div class="whole">
+                                    <label for="comment">Comment</label>
+                                    <textarea cols="30" rows="8" id="comment" maxlength='254' placeholder="Write here your comment..."></textarea>
+                                    <div id="showChar">254 characters left</div>
+                                    <div id="lastChar"></div>
+                                </div>
+                                <!--Reset botton-->
+                                <div class="whole">
+                                    <input type="reset" class="button empty" value="Empty form">
+                                    <!--Submit botton: validate information
+                                    (HOW??nd show at the bottom of the page-->
+                                    <input type="submit" class="button submit" value="Submit form">
+                                </div>
+
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <h4>Drop me a messagge</h4>
+                    <div class="column small"><a class="icon" href="mailto:iris.workrelated@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></div>
+                    <div class="column small"><a class="icon" href="https://www.linkedin.com/in/irismark/LinkedIn" target="_blank"><i class="fa fa-linkedin iconBig"></i></a></div>
+                    <div class="column small"><a class="icon" href="https://www.facebook.com/iris.mark.92/" target="_blank"><i class="iconBig fa fa-facebook-official"></i></a></div>
+                    <div class="column small"><a class="icon" href="https://www.instagram.com/irisshelovely/" target="_blank"><i class="fa fa-instagram"></i></a></div>
+
+                    <br /><br /><br />
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <p>&copy Iris Mark 2021</p>
+    </footer>
+
+    <script src="JS\external.js"></script>
+    <script src="JS\contactForm.js"></script>
+</body>
+</html>

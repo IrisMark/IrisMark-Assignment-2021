@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="Face-64.png" type="image/png">
+    <title>Iris Mark &ndash; Introduction</title>
+    <meta name="description" content="Final project for the Developing Modern Web Platforms course.">
+    <meta name="keywords" content="meta tags, learning, developing, modern web platforms, HTML5, CSS, JS, Bootstrap, responsive, web applications, graphic designer, AMKooderi">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Styles\styles.css" media="screen" />
+</head>
+<body>
+    <main>
+        <div class="row">
+
+            <!--start of side column (left)-->
+            <div class="column side">
+                <div class="imageSide">
+                    <img src="Images\IrisMark_2021.jpg"
+                         alt="Portrait of Iris Mark - made by Amanda Soila"
+                         title="Always happy in Finlands Finest Forrest"
+                         style="border-radius:50%">
+                </div>
+
+                <header>
+                    <h2> Iris Mark</h2>
+                    <h3> Visual Designer &amp; <br /> Web Developer</h3>
+                </header>
+
+                <nav>
+                    <a class="active" href="_index.html">Introduction</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="feedback.html">Feedback</a>
+                </nav>
+
+                <div class="inSide">
+                    <p> </p>
+                </div>
+            </div>
+
+            <!--start of main column (right)-->
+            <div class="column main">
+                <div class="block">
+                    <h4> About me </h4>
+                    <p>More than 18 years of experience in (digital) content marketing and publishing. Currently I am focusing on building my skill with different programming languages for web design and development (C#, Python and JavaScript). I have designed and created websites mostly with HTML/CSS and WordPress.</p>
+
+                    <p>I already have a good understanding of web development technologies and I am looking for opportunity to work as a Junior Web Developer or similar role. </p>
+
+                    <p>In my last job my main responsibilities were in Anygraaf Neo publication systems templates, print layouts and web banners. I also uploaded content to various CMS platforms (Episerver, eZ, Flockler, IMSaaS, Sitecore, WordPress || LianaMailer) and I helped out with image editing.</p>
+
+                    <p>Precision, accuracy and completeness are very important to me. I am detail oriented and thorough. Colleagues have found me to be reliable, diligent and easy to work alongside. I am a cheerful and social person. A team player who is not afraid to get involved. I believe I can give a positive dynamic to a company.</p>
+                </div>
+
+
+                <div class="block">
+                    <div class="row">
+                        <div class="column split">
+                            <h4> Recent courses </h4>
+                            <ul>
+                                <li>2021 &ndash; Modern Web Platforms </li>
+                                <li>2021 &ndash; Basics of C# </li>
+                                <li>2021 &ndash; Elements of AI </li>
+                            </ul>
+                        </div>
+
+                        <div class="column split">
+                            <h4> References</h4>
+                            <p>
+                                <strong>Sirpa Ärmänen</strong><br />
+                                <i>Fokus Media Finland</i><br />
+                                AD &amp; Design Team supervisor<br />
+                                <a href="mailto:sirpa.armanen@fokusmedia.fi">Send an email to Sirpa</a>
+                            </p>
+                            <p>
+                                <strong>Josefina Hatara</strong><br />
+                                <i>Josefina Hatara Design</i><br />
+                                AD &amp; entrepreneur
+                                <br />
+                                <a href="mailto:josefina@josefinahataradesign.fi">Send an email to Josa</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="blockRemove" class="block">
+                    <h4> What time and date is it? </h4>
+                    <p id="dateToday"></p>
+                    <button class="button submit" onclick="refreshFunction()">Refresh</button>
+                    <button id="removeBlock" class="button empty" onclick="removeFunction()">Remove</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy Iris Mark 2021</p>
+    </footer>
+
+    <script src="JS\external.js"></script>
+
+</body>
+</html>
